@@ -1,0 +1,22 @@
+{
+  "title": "Rice genomic selection: frozen-prediction reproduction",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Li, Jixiao",
+      "affiliation": "Field Science Center for Northern Biosphere, Hokkaido University"
+    }
+  ],
+  "description": "Minimal empirical frozen-prediction reproduction for original NAM, MAGIC and IRRI comparisons, NAM four-strategy and fixed-penalty analyses, and two IRRI partition policies. Includes author-generated predictions and exact scoring identities; original source phenotypes are supplied locally by the user. No refitting or retuning. Software MIT; author-generated prediction/result resources CC BY 4.0; source identity attributions are documented in README.",
+  "access_right": "open",
+  "license": "mit",
+  "version": "1.0.0",
+  "keywords": [
+    "rice",
+    "genomic prediction",
+    "target phenotyping",
+    "ridge regression",
+    "Gaussian kernel",
+    "reproducibility"
+  ]
+}

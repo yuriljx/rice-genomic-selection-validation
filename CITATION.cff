@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its code or frozen-prediction resources."
+type: software
+title: "Rice genomic selection: frozen-prediction reproduction"
+version: 1.0.0
+authors:
+  - family-names: Li
+    given-names: Jixiao
+    affiliation: "Field Science Center for Northern Biosphere, Hokkaido University"
+repository-code: "https://github.com/yuriljx/rice-genomic-selection-validation"
+license: MIT

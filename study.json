@@ -1,0 +1,70 @@
+{
+  "project": "Rice genomic selection: frozen-prediction reproduction",
+  "version": "1.0.0",
+  "scope": "Empirical predictions-to-results reproduction for original NAM/MAGIC/IRRI deployments, NAM four-strategy and fixed-penalty analyses, and both IRRI partition policies. It does not refit models, retune, reconstruct upstream field-adjustment semantics, reproduce every historical exploration, or reproduce native manuscript layout. Numerical model modules are supplied separately for inspection.",
+  "resources": {
+    "resources/reference.csv.gz": {
+      "bytes": 181576,
+      "sha256": "e0909dd00f27f0d33d66969b4dc742b2b7fe2c9c477d6e58095c4e9b5032d996"
+    },
+    "resources/study.json.gz": {
+      "bytes": 158168,
+      "sha256": "f393f61613e3e98f2492619119346b63c27c24687f0c5d87733e4b8f4185f1ec"
+    },
+    "resources/predictions.npz": {
+      "bytes": 8418292,
+      "sha256": "642ac34b6ecd8de6877a7801a41fafcd0b87e0404354c3609b5fb9ff0e85dca5"
+    },
+    "resources/inputs.json": {
+      "bytes": 74081,
+      "sha256": "a6a38c0fd2b0f1696bddf9bdc75132b53808c0730e8e9883d25f9b7e349d0bb8"
+    },
+    "resources/resampling.npy": {
+      "bytes": 1200128,
+      "sha256": "4b85bcffa68c14f600ccf7fbab82706be235e34e168d68be5154de41e154814d"
+    },
+    "resources/wei_ID_rows.csv.gz": {
+      "bytes": 82035,
+      "sha256": "cc305de39e40cc3c0fc6db2375c6ecd445762f9263647effb5aaf5683c4156d1"
+    },
+    "resources/MAGIC_contrast_reference.csv": {
+      "bytes": 1933,
+      "sha256": "e814f947ffbd715f1b71f0ff07be200a8059106a81bf6270aeeabd782084d5e5"
+    }
+  },
+  "expected_cells": {
+    "IRRI_original": 20,
+    "IRRI_partitions": 800,
+    "MAGIC_original": 70,
+    "NAM_fixed_grid": 1800,
+    "NAM_four_arm": 900,
+    "NAM_original": 1350
+  },
+  "reference_rows": 8940,
+  "reference_tolerance": {
+    "U_absolute": 1e-08,
+    "correlation_absolute": 1e-10,
+    "N_and_q": "exact"
+  },
+  "source_data": {
+    "Wei": "https://doi.org/10.1126/science.adm8762",
+    "genotypes": "https://doi.org/10.6084/m9.figshare.19166475.v1",
+    "family_mapping": "https://doi.org/10.6084/m9.figshare.31881931.v1",
+    "IRRI": "https://doi.org/10.5061/dryad.7369p"
+  },
+  "statistics": "Five paired draws within NAM family, fifteen family means equally weighted; archived 10000 resampling rows, linear-interpolated quantiles; conditional pointwise intervals and selected-six Bonferroni sensitivity are explicitly distinct. No new fixed-grid r interval or p-value. IRRI summaries describe overlapping partitions.",
+  "source_data_not_included": true,
+  "MAGIC_contrast_map": {
+    "weighted100 - rkhs0": "original_primary",
+    "pool100 - ridge0": "pooling_check",
+    "pool_rkhs100 - rkhs0": "calibrated_Gaussian",
+    "pool_rkhs100 - pool100": "calibrated_kernel",
+    "rkhs0 - ridge0": "source_kernel",
+    "weighted100 - pool100": "weighting",
+    "weighted100 - pool_rkhs100": "weighted_vs_calibrated_Gaussian",
+    "weighted100 - ridge0": "weighted_vs_ridge",
+    "weighted100 - source_tuned_targetonly100": "weighted_vs_target_only",
+    "weighted25 - rkhs0": "C25_vs_Gaussian",
+    "(pool_rkhs100 - pool100) - (rkhs0 - ridge0)": "I"
+  }
+}

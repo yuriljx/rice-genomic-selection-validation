@@ -36,4 +36,4 @@ study.json specifies inputs, versions, task counts and tolerances. resources/stu
 
 Author software and documentation: MIT, copyright 2026 Jixiao Li. Author-generated predictions and numerical results: CC BY 4.0. Source-derived genotype identities retain their CC BY 4.0 attribution; IRRI-derived identities retain their CC0 provenance. These licenses do not relicense the Wei supplementary phenotype workbook, which users must obtain and use under its source terms.
 
-Use CITATION.cff for this software version. A GitHub tag and a verified Zenodo version record identify the public release when publication is complete.
+Use CITATION.cff for this software version. Version 1.0.0 is archived at https://doi.org/10.5281/zenodo.23438608 (all versions: https://doi.org/10.5281/zenodo.23438607).
